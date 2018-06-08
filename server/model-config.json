@@ -1,0 +1,56 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "AccessToken": {
+    "dataSource": "localhost",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "localhost",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "localhost",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "localhost",
+    "public": false
+  },
+  "admin": {
+    "dataSource": "localhost",
+    "public": true
+  },
+  "user": {
+    "dataSource": "localhost",
+    "public": true
+  },
+  "product": {
+    "dataSource": "localhost",
+    "public": true
+  },
+  "company": {
+    "dataSource": "localhost",
+    "public": true
+  },
+  "container": {
+    "dataSource": "storage",
+    "public": true
+  },
+  "industry": {
+    "dataSource": "localhost",
+    "public": true
+  }
+}

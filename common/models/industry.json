@@ -1,0 +1,36 @@
+{
+  "name": "industry",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+
+    "name": {
+      "type": "string"
+    },
+    "description" :{
+       "type": "string"
+    },
+    "image" :{
+       "type": "string"
+    } 
+
+  },
+  "validations": [],
+  "relations": {
+    "company": {
+      "type": "hasMany",
+      "model": "company",
+      "foreignKey": "industryId"
+    },
+    "product": {
+      "type": "hasMany",
+      "model": "product",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

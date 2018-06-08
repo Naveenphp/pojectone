@@ -1,0 +1,38 @@
+{
+  "name": "company",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    
+    "image": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "industryId" : {
+      "type" : "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "industry": {
+      "type": "hasMany",
+      "model": "industry",
+      "foreignKey": "industryId"
+    },
+    "product": {
+      "type": "belongsTo",
+      "model": "product",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,19 @@
+{
+  "localhost": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "testproj1",
+    "name": "localhost",
+    "connector": "mongodb"
+  },
+  "transient": {
+    "name": "transient",
+    "connector": "transient"
+  },
+  "storage": {
+    "name": "storage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./server/storage"
+  }
+}
